@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+ <body> <!-- Abre o corpo do site -->
+    
+         <nav id="botao-menu"> <!-- Navegação do site -->
+        
+        <ul>
+        <li><a href="Index.html">Início</a></li>
+        <li><a href="sobrenos.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+        <li><a href="pedidos.html">Pedidos</a></li> <!-- Link para a página de pedidos -->
+        <li><a href="feedback.html">Feedback</a></li> <!-- Link para a página de feedback -->
+        <li><a href="cadastro.html">Cadastro</a></li> <!-- Link para a página de cadastro -->
+        </ul>
+          
+    </nav>
+
+     <div class="spacer"></div> <!-- Espaço para não sobrepor o header -->
+     
+    <h1>Feedback do Cliente</h1>
+    <form action="enviar_feedback.php" method="POST">
+        <fieldset>
+        <legend> <h3> 📝 Contato Geral</h3> </legend>
+        <label for="nome">👤Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">📧Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        </fieldset>
+        
+        <fieldset>
+        <legend> <h3>🍞 Produtos e Servicos</h3> </legend>
+        <label for="produto">Produto Avaliado:</label>
+        <select id="produto" name="produto" required>
+            <option value="">Selecione um produto</option>
+            <option value="pao">🥖 Pães tradicionais</option>
+            <option value="bolo">🍰Doces e bolos</option>
+            <option value="salgado">🥐Salgado</option>
+            <option value="diet">🥗 Produtos diet/light</option>
+            <option value="integrais">🌾 Produtos integrais</option>
+        </select><br><br>
+                  
+
+        <label for="avaliacao">Avaliação Geral:</label>
+        <select id="avaliacao" name="avaliacao" required>
+            <option value="">Selecione uma avaliação</option>
+            <option value="excelente">🌟Excelente</option>
+            <option value="bom">👍Bom</option>
+            <option value="regular">😐Regular</option>
+            <option value="ruim">👎Ruim</option>
+        </select><br><br>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="3" cols="30" placeholder="Escreva seu feedback aqui..." required></textarea>
+    </fieldset>
+      <section id="botao">   <!-- Botão para enviar mensagem -->
+       <br> <button type="submit">Enviar Feedback</button>
+    </section>
+    </form>
+    <footer> <!-- FOOTER: informações finais e créditos -->
+      <p>&copy; 2025 Padaria do Bairro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

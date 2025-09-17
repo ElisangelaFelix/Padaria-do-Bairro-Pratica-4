@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato Geral</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+ <body> <!-- Abre o corpo do site -->
+    
+         <nav id="botao-menu"> <!-- Navegação do site -->
+        
+        <ul>
+        <li><a href="Index.html">Início</a></li>
+        <li><a href="sobrenos.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+        <li><a href="pedidos.html">Pedidos</a></li> <!-- Link para a página de pedidos -->
+        <li><a href="feedback.html">Feedback</a></li> <!-- Link para a página de feedback -->
+        <li><a href="cadastro.html">Cadastro</a></li> <!-- Link para a página de cadastro -->
+        </ul>
+          
+    </nav>
+
+     <div class="spacer"></div> <!-- Espaço para não sobrepor o header -->
+
+    
+    <form>
+        <h1>Formulário de Contato</h1>
+        <fieldset>
+        <legend> <h3> 📝 Contato Geral</h3> </legend>
+        <label for="nome">👤Nome:</label>
+        <input type="text" id="nome" name="nome" required><br> <br>
+
+        <label for="email">📧Email:</label>
+        <input type="email" id="email" name="email" required><br> <br>
+
+        <label for="telefone">📞Telefone:</label>
+        <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX " ><br> <br>
+        </fieldset>
+
+        <fieldset>
+        <legend> <h3> ✍️ Sua Mensagem </h3> </legend>
+        <label for="assunto">📋 Assunto:</label>
+        <select id="assunto" name="assunto" required>
+            <option value="">Selecione um assunto</option>
+            <option value="pedido">ℹ️ Informações gerais</option>
+            <option value="reclamação">⚠️Reclamação</option>
+            <option value="sugestão">💡Sugestão</option>
+            <option value="elogio">🌟Elogio</option>
+            <option value="outro">❓Outro</option>
+        </select><br> <br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="30" placeholder="Digite aqui..." required></textarea><br> <br>
+
+        </fieldset>
+        <section id="botao">   <!-- Botão para enviar mensagem -->
+       <br> <button type="submit">Enviar Mensagem</button>
+    </section>
+    </form>
+    
+    <footer> <!-- FOOTER: informações finais e créditos -->
+      <p>&copy; 2025 Padaria do Bairro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

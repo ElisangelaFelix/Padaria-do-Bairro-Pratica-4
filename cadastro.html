@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro/Newsletter</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+ <body> <!-- Abre o corpo do site -->
+    
+         <nav id="botao-menu"> <!-- Navegação do site -->
+        
+        <ul>
+        <li><a href="Index.html">Início</a></li>
+        <li><a href="sobrenos.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+        <li><a href="pedidos.html">Pedidos</a></li> <!-- Link para a página de pedidos -->
+        <li><a href="feedback.html">Feedback</a></li> <!-- Link para a página de feedback -->
+        <li><a href="cadastro.html">Cadastro</a></li> <!-- Link para a página de cadastro -->
+        </ul>
+          
+    </nav>
+
+     <div class="spacer"></div> <!-- Espaço para não sobrepor o header -->
+
+      <form>
+        <h1>Cadastro de Clientes</h1>
+        <!-- Seção 1: Dados Pessoais -->
+        <fieldset>
+            <legend>👤 Dados Pessoais</legend>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required><br> <br>
+
+            <label for="email">📧 Email:</label>
+            <input type="email" id="email" name="email" required><br> <br>
+
+            <label for="telefone">📞 Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required><br> <br>
+
+            <label for="nascimento">🎂 Data de nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+        </fieldset>
+
+        <!-- Seção 2: Endereço -->
+        <fieldset>
+            <legend>🏠 Endereço</legend>
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required><br> <br>
+
+            <label for="numero"> Número:</label>
+            <input type="number" id="numero" name="numero" required><br> <br>
+
+            <label for="bairro"> Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required><br> <br>
+
+            <label for="cep"> CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="xxxxx-xxx" required>
+        </fieldset>
+
+        <!-- Seção 3: Preferências -->
+        <fieldset>
+            <legend>🍞 Preferências</legend>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="preferencias[]" value="pao"> 🥖 Pães artesanais</label><br> <br>
+                <label><input type="checkbox" name="preferencias[]" value="doces"> 🍰 Doces e bolos</label><br> <br>
+                <label><input type="checkbox" name="preferencias[]" value="salgados"> 🥐 Salgados</label><br> <br>
+                <label><input type="checkbox" name="preferencias[]" value="diet"> 🥗 Produtos diet/light</label><br> <br>
+                <label><input type="checkbox" name="preferencias[]" value="integrais"> 🌾 Produtos integrais</label>
+            </div>
+        </fieldset>
+
+        <!-- Seção 4: Termos -->
+        <fieldset>
+            <legend>📄 Termos</legend>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="promocoes" value="sim"> 📩 Aceito receber promoções por email</label><br> <br>
+                <label><input type="checkbox" name="termos" value="aceito" required> ✅ Aceito os termos de uso</label>
+            </div>
+        </fieldset>
+    <section id="botao">   <!-- Botão para enviar dados -->
+       <br> <button type="submit">Enviar Cadastro</button>
+    </section>
+    </form>
+
+    <footer> <!-- FOOTER: informações finais e créditos -->
+      <p>&copy; 2025 Padaria do Bairro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
